@@ -1,0 +1,30 @@
+# Virtualenv
+/env/
+/dlib/
+venv/
+.env
+*.env
+
+# Arquivos de configuração
+pyvenv.cfg
+
+# Dados
+*.pkl
+*.pt
+*.npy
+*.jpg
+*.png
+*.mp4
+*.avi
+frames/
+data/
+datasets/
+outputs/
+models/
+checkpoints/
+
+# Cache e meta
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.log
