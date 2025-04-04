@@ -4,24 +4,29 @@ Este projeto realiza o reconhecimento facial em tempo real utilizando a bibliote
 
 ## Requisitos do Sistema
 
+### 1. Instale o Cmake 3.26.6
+
+- Versão compatível: cmake-3.26.6-windows-x86_64.msi
+- https://cmake.org/files/v3.26/cmake-3.26.6-windows-x86_64.msi
+
 Antes de instalar o projeto, certifique-se de que o sistema possui os seguintes componentes **já instalados**:
 
-### 1. Python
+### 2. Python
 
 - Versão **3.9** (ou compatível com os pacotes utilizados)
 
-### 2. Visual Studio
+### 3. Visual Studio
 
 - **Visual Studio 2019 (VS16)**  
 - Link para download: https://files03.tchspt.com/down/vs_Community2019.exe
 - Inclua o componente **MSVC v142 (14.29)** no instalador do Visual Studio em **desenvolvimento de desktop com C++**.
 
-### 3. CUDA Toolkit
+### 4. CUDA Toolkit
 
 - **CUDA 11.8**  
 - Baixar em: https://developer.nvidia.com/cuda-11-8-0-download-archive
 
-### 4. cuDNN
+### 5. cuDNN
 
 - **cuDNN 8.9.7 para CUDA 11.8**  
 - Baixar em: https://developer.nvidia.com/rdp/cudnn-archive
@@ -36,20 +41,21 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8
 
 ## Instalação
 
-### 1. Clone o repositório
+### 6. Clone o repositório
 
 - git clone https://github.com/seu-usuario/projetc-face-recognition-gpu.git
 - cd projetc-face-recognition-gpu
 
-### 2. Crie e ative um ambiente virtual
+### 7. Crie e ative um ambiente virtual
 
 - python -m venv env
 - env\Scripts\activate
 
-### 3. Instale as dependências Python
+### 8. Instale as dependências Python
 
 - pip install -r requirements.txt
 - pip install torch==2.2.2+cu118 torchvision==0.17.2+cu118 torchaudio==2.2.2+cu118 --index-url https://download.pytorch.org/whl/cu118
+
 
 ## Compilando o dlib com suporte a CUDA
 
@@ -104,6 +110,7 @@ Para iniciar:
 Crie um arquivo `.env` na raiz com as credenciais do MySQL:
 
   .env
+  
     DB_HOST=localhost
     DB_USER=seu_usuario
     DB_PASSWORD=sua_senha
